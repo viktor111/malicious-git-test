@@ -1,6 +1,7 @@
 import scrapy
 import requests
 
-class GitHub_spider(scrapy.Spider):
+class GithubSpider(scrapy.Spider):
     name = "github"
-
+    def start_requests(self):
+        urls = []
